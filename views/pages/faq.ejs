@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Carfunt: Affordable Car Insurance for Nigerians" />
+    <!-- css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Title -->
+    <title>Carfunt: Affordable Car Insurance for Nigerians</title>
+  </head>
+  <body>
+    <div class="wrapper ovh">
+      <!-- Sidebar Panel Start -->
+      <div class="listing_sidebar">
+        <div class="siderbar_left_home pt20">
+          <a class="sidebar_switch sidebar_close_btn float-end" href="#"
+            >Close</a
+          >
+          <div class="footer_contact_widget mt100">
+            <h3 class="title">About Us</h3>
+            <p>
+              We’re a car insurance company that uses software to make car
+              insurance delightful, affordable and easier to access.
+            </p>
+          </div>
+          <div class="footer_contact_widget">
+            <h5 class="title">CONTACT</h5>
+            <div class="footer_phone">+234 807 451 7306</div>
+            <p>hello@carfunt.com</p>
+          </div>
+          <div class="footer_about_widget">
+            <h5 class="title">LOCATION</h5>
+            <p>Coming to the nearest City closer to you.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar Panel End -->
+
+      <!-- Main Header Nav -->
+      <header
+        class="header-nav menu_style_home_one home7_style transparent main-menu"
+      >
+        <!-- Ace Responsive Menu -->
+        <nav>
+          <div class="container-fluid">
+            <!-- Menu Toggle btn-->
+            <div class="menu-toggle">
+              <button type="button" id="menu-btn">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <ul
+              id="respMenu3"
+              class="ace-responsive-menu menu_list_custom_code wa float-start mr30"
+              data-menu-style="horizontal"
+            >
+              <li class="sidebar_panel">
+                <a class="sidebar_switch pt-3" href="#"><span></span></a>
+              </li>
+            </ul>
+            <a href="index.html" class="navbar_brand float-start dn-md me-4">
+              <h1>Carfunt</h1>
+            </a>
+            <!-- Responsive Menu Structure-->
+            <ul
+              id="respMenu"
+              class="ace-responsive-menu menu_list_custom_code wa float-start"
+              data-menu-style="horizontal">
+              <li>
+                <a href="index.html"><span class="title">Home</span></a>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="faq.html">Faq</a></li>
+              <li>
+                <a href="#"><span class="title">Contact Us</span></a>
+                <ul>
+                  <li>
+                    Call:
+                    <a href="tel:+2348074517306"><h4>+234 807 451 7306</h4></a>
+                  </li>
+                  <li>
+                    Email:
+                    <a href="mailto:hello@carfunt.com"
+                      ><h4>hello@carfunt.com</h4></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul
+              id="respMenu2"
+              class="ace-responsive-menu menu_list_custom_code wa text-end"
+              data-menu-style="horizontal"
+            >
+              <li>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#logInModal"
+                  ><span class="flaticon-user-2 dn db-lg"></span
+                  ><span class="dn-lg">Login</span></a
+                >
+              </li>
+              <li><a href="#">|</a></li>
+              <li class="add_listing">
+                <a href="register.html">Get Started</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Modal -->
+      <div
+        class="sign_up_modal modal fade"
+        id="logInModal"
+        data-backdrop="static"
+        data-keyboard="false"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body container p60">
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul
+                    class="sign_up_tab nav nav-tabs"
+                    id="myTab"
+                    role="tablist"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        id="home-tab"
+                        data-bs-toggle="tab"
+                        href="#home"
+                        role="tab"
+                        aria-controls="home"
+                        aria-selected="true"
+                        >Login</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="profile-tab"
+                        data-bs-toggle="tab"
+                        href="#profile"
+                        role="tab"
+                        aria-controls="profile"
+                        aria-selected="false"
+                        >Get Started</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-content container p0" id="myTabContent">
+                <div
+                  class="row mt30 tab-pane fade show active"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <div class="col-lg-12">
+                    <div class="login_form">
+                      <p>
+                        New to Carfunt.com?
+                        <a href="register.html">Sign up.</a> Are you a car
+                        specialist?
+                      </p>
+                      <form action="/login" method="post">
+                        <div class="mb-2 mr-sm-2">
+                          <label class="form-label">Email address *</label>
+                          <input type="email" class="form-control" />
+                        </div>
+                        <div class="form-group mb5">
+                          <label class="form-label">Password *</label>
+                          <input type="password" class="form-control" />
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="exampleCheck3"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="exampleCheck3"
+                            >Remember me</label
+                          >
+                          <a class="btn-fpswd float-end" href="#"
+                            >Lost your password?</a
+                          >
+                        </div>
+                        <button type="submit" class="btn btn-log btn-thm mt5">
+                          Sign in
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="row mt30 tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div class="col-lg-12">
+                    <div class="sign_up_form">
+                      <p>
+                        Already have a Carfunt profile?
+                        <a href="login.html">Sign in.</a>
+                      </p>
+                      <form method="post"  action="/register">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="form-label">First Name</label>
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <label class="form-label">Last Name</label>
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                              <label class="form-label">Email</label>
+                              <input type="email" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group mb20">
+                              <label class="form-label">Password</label>
+                              <input type="password" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group mb20">
+                              <label class="form-label">Confirm Password</label>
+                              <input type="password" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <button
+                          type="submit"
+                          class="btn btn-signup btn-thm mb0"
+                        >
+                          Sign Up
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Header Nav For Mobile -->
+      <div id="page" class="stylehome1 h0">
+        <div class="mobile-menu">
+          <div class="header stylehome1">
+            <div class="mobile_menu_bar">
+              <a class="menubar" href="#menu"
+                ><small>Menu</small><span></span
+              ></a>
+            </div>
+            <!-- <div class="mobile_menu_main_logo"><img class="nav_logo_img img-fluid" src="images/header-logo2.svg" alt="images/header-logo2.png"></div> -->
+
+            <div class="mobile_menu_main_logo">CARFUNT</div>
+          </div>
+        </div>
+        <!-- /.mobile-menu -->
+        <nav id="menu" class="stylehome1">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">Our Faq</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Get Started</a></li>
+            <!-- Only for Mobile View -->
+            <li class="mm-add-listing">
+              <span class="border-none">
+                <span class="mmenu-contact-info">
+                  <span class="phone-num"
+                    ><i class="flaticon-map"></i>
+                    <a href="#">Coming to the nearest City closer to you.</a></span
+                  >
+                  <span class="phone-num"
+                    ><i class="flaticon-phone-call"></i>
+                    <a href="tel:+2348074517306">+234 807 451 7306</a></span
+                  >
+                  
+                </span>
+                <span class="social-links">
+                  <a href="#"><span class="fab fa-facebook-f"></span></a>
+                  <a href="#"><span class="fab fa-twitter"></span></a>
+                  <a href="#"><span class="fab fa-instagram"></span></a>
+                  <a href="#"><span class="fab fa-youtube"></span></a>
+                  <a href="#"><span class="fab fa-pinterest"></span></a>
+                </span>
+              </span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <hr />
+<!-- ****End of header -->
+
+	<!-- Inner Page Breadcrumb -->
+	<section class="inner_page_breadcrumb style2">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="breadcrumb_content style2">
+						<h2 class="breadcrumb_title">Our Faq</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Our FAQ -->
+	<section class="our-faq bgc-f9 pt0 pb80">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7 col-xl-8">
+					<div class="faq_content mb40">
+						<div class="faq_according">
+							<div class="accordion" id="accordionExample">
+						  	<div class="card">
+							    <div class="card-header active" id="headingOne">
+							    	<h4 class="mb-0">
+						        	<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How do I use this theme?</button>
+							   		</h4>
+							    </div>
+							    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+								    <div class="card-body">
+					        		<p class="mb30">Mauris nulla lorem, interdum varius orci vitae, bibendum sagittis tellus. Nulla elementum dolor dui, vel condimentum erat vestibulum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet risus lacus. Suspendisse pellentesque tempus enim ac hendrerit. Morbi cursus sapien eu nisl viverra mattis. Integer vestibulum enim dolor, sit amet maximus urna imperdiet ut.</p>
+					        		<p>Fusce eu massa nec diam fermentum imperdiet ac vel est. Morbi condimentum imperdiet lorem, quis gravida lacus placerat eget. Quisque nunc massa, laoreet sed consectetur sed, elementum eu quam. Donec non molestie metus. Suspendisse placerat ante ac pharetra scelerisque. Duis ut tellus aliquet, lacinia lacus et, ullamcorper risus. Vivamus risus arcu, tempus nec mi convallis, congue tempor nibh.</p>
+								    </div>
+							    </div>
+						    </div>
+						    <div class="card">
+						    	<div class="card-header" id="headingTwo">
+						    		<h4 class="mb-0">
+					        		<button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Are You looking for a new car?</button>
+						    		</h4>
+						    	</div>
+						    	<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+					      		<div class="card-body">
+                      <p class="mb30">Mauris nulla lorem, interdum varius orci vitae, bibendum sagittis tellus. Nulla elementum dolor dui, vel condimentum erat vestibulum molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet risus lacus. Suspendisse pellentesque tempus enim ac hendrerit. Morbi cursus sapien eu nisl viverra mattis. Integer vestibulum enim dolor, sit amet maximus urna imperdiet ut.</p>
+                      <p>Fusce eu massa nec diam fermentum imperdiet ac vel est. Morbi condimentum imperdiet lorem, quis gravida lacus placerat eget. Quisque nunc massa, laoreet sed consectetur sed, elementum eu quam. Donec non molestie metus. Suspendisse placerat ante ac pharetra scelerisque. Duis ut tellus aliquet, lacinia lacus et, ullamcorper risus. Vivamus risus arcu, tempus nec mi convallis, congue tempor nibh.</p>
+						     		 </div>
+						    	</div>
+						    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+        <div class="col-xs-8 col-sm-8 col-md-5 col-xl-3 offset-xl-1">
+          <div class="sidebar_vichel_avail_Widget">
+            <div class="thumb"><img src="images/about/sidebar-vichel.jpg" alt="sidebar-vichel.jpg"></div>
+            <div class="details">
+              <div class="wrapper">
+                <div class="title_count">Access a Car<span><img src="images/home/title-bottom-border.svg" alt=""></span></div>
+                <h4 class="title"> Specialist today</h4>
+                <p class="para">Find the right price, specialist and advice.</p>
+                <p class="subtitle">CALL US NOW</p>
+                <a class="phone_number" href="tel:+2348074517306">+234 807 451 7306</a>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+	</section>
+
+	
+      <!-- Carfunt Footer -->
+      <section class="footer_one home7_style pt0 pb40">
+        <div class="container">
+          <div class="feature_icons home7_style">
+            <div class="row">
+              <div class="col-lg-6 col-xl-7">
+                <div class="mailchimp_widget home7_style mb30-md">
+                  <div class="details">
+                    <h3 class="title">Subscribe our newsletter</h3>
+                    <p class="para">
+                      Learn more on how we are Making car Insurance easy and
+                      affordable for everyone..
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-5">
+                <div class="footer_social_widget">
+                  <form class="footer_mailchimp_form home2 home7_style">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Your Email..."
+                        />
+                        <button class="btn-thm" type="submit">Subscribe</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container pt80 pt20-sm pb70 pb0-sm">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+              <div class="footer_contact_widget home2">
+                <h5 class="title">About Us</h5>
+                <p>
+                  We’re a car insurance company that uses software to make car
+                  insurance delightful, affordable and easier to access.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+              <div class="footer_about_widget home2">
+                <h5 class="title">Location</h5>
+                <p>Coming to the nearest City closer to you.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+              <div class="footer_contact_widget home2">
+                <h5 class="title">NEED HELP</h5>
+                <p>Call Us</p>
+                <a href="tel:+2348074517306">
+                  <div class="footer_phone">+234 807 451 7306</div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3">
+              <div class="footer_contact_widget home2">
+                <h5 class="title">NEED HELP</h5>
+                <p>Email Us</p>
+                <a href="mailto:hello@carfunt.com">
+                  <div class="footer_phone">hello@carfunt.com</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-8 col-xl-9">
+              <div
+                class="copyright-widget home2 mt5 text-center text-md-start mb20-sm"
+              >
+                <p>.:: Carfunt © 2022. All Rights Reserved.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+              <div class="footer_social_widget home2 text-center text-md-end">
+                <ul class="mb0">
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a class="scrollToHome" href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- Wrapper End -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/jquery.mmenu.all.js"></script>
+    <script src="js/ace-responsive-menu.js"></script>
+    <script src="js/isotop.js"></script>
+    <script src="js/snackbar.min.js"></script>
+    <script src="js/simplebar.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/scrollto.js"></script>
+    <script src="js/jquery-scrolltofixed-min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/progressbar.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/timepicker.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!-- Custom script for all pages -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
